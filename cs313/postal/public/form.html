@@ -6,16 +6,17 @@
 </head>
 <body id="main">
 <div class="border">
-    <h1 class="center">Welcome Administrator:</h1>
+    <h1 class="center">Postage Calculator:</h1>
+    <h2>Please enter the weight and choose a package type</h2>
     <form action="../calc" method="get"> <!--go to the calc page to compute total-->
     <div class="input">
-        Item Weight: <input type="text" name="weight"><br><br>
+        Item Weight (oz): <input type="text" name="weight"><br><br>
         Type of Mail:<select name="type">
             <option value="stamped">Letters (Stamped)</option>
             <option value="metered">Letters (Metered)</option>
             <option value="flats">Large Envelopes (Flats)</option>
-            <option value="retail">First-Class Pacakge Service—Retail</option>
-          </select>
+            <option value="retail">First-Class Packge Service—Retail</option>
+          </select><br><br>
     </div>
     <input id="submit" type="submit" value="Calculate Postage">
     </form>
